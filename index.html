@@ -25,35 +25,69 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-light bg-light static-top">
+  <nav class="navbar navbar-light bg-white navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">inga software solutions</a>
+      <a class="navbar-brand" href="index.html">
+        <img src="/img/logo.png" width="100" height="45" class="d-inline-block align-top" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link text-dark" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <button class="btn btn-danger my-2 my-sm-0 align-right btn-flat" type="submit"><span class="font-weight-bold">Request Demo</span></button>
+      </div>
     </div>
   </nav>
 
   <!-- Masthead -->
-  <header class="masthead text-white text-center">
-    <div class="overlay"></div>
+  <header class="text-white text-center my-5">
     <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h1 class="mb-5">To arrange a demo, contact us.</h1>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+      <div class="row align-items-center">
+        <div class="col-lg-6 my-sm-3">
+          <h1 class="text-dark">Inga Software Solutions</h1>
+          <p class="text-dark">
+            Here at inga Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
           <form action="https://send.pageclip.co/oAHqXuXJX3S94X1DKQbftjli9RsfZNwb/subscribe" class="pageclip-form" method="post">
             <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input id="emailInput" type="email" name="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              <div class="col-9 mb-2 mb-md-0">
+                  <input id="emailInput" type="email" name="email" class="form-control form-control-lg" placeholder="Enter your email...">
+                </div>
+                <div class="col-3">
+                  <button type="submit" class="btn btn-lg btn-dark pageclip-form__submit">
+                    Subscribe!
+                  </button>
+                </div>
               </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-warning pageclip-form__submit">
-                Subscribe!
-              </button>
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
+          <div class="col-lg-6 my-sm-3 pt-5 pl-5">
+            <img class="img-fluid" src="/img/undraw_performance_overview_p9bm.svg" alt="">
+          </div>
         </div>
-      </div>
+    </div>
     </div>
   </header>
 
@@ -175,7 +209,7 @@
   </section> -->
 
   <!-- Footer -->
-  <footer class="footer bg-light">
+  <footer class="footer bg-white">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
@@ -196,7 +230,12 @@
               <a href="#">Privacy Policy</a>
             </li>
           </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; ingasoftware 2020. All Rights Reserved.</p>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; ingasoftware
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script>. All Rights Reserved.
+          </p>
         </div>
         <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
           <ul class="list-inline mb-0">
